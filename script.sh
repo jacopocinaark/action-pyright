@@ -4,6 +4,7 @@ set -euo pipefail
 
 BASE_PATH="$(cd "$(dirname "$0")" && pwd)"
 INPUT_PYRIGHT_VERSION=${INPUT_PYRIGHT_VERSION:-latest}
+REVIEWDOG_VERSION=${INPUT_REVIEWDOG_VERSION:-latest}  # Aggiunto per gestire la versione di reviewdog
 
 cd "${GITHUB_WORKSPACE}/${INPUT_WORKDIR}" || exit 1
 
