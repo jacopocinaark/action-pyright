@@ -23,6 +23,9 @@ inputs:
       Default is added.
     required: false
     default: "added"
+  reviewdog_version:
+    description: 'Reviewdog version. [latest, nightly, vX.Y.Z]'
+    default: 'latest'
   fail_on_error:
     description: |
       Exit code for reviewdog when errors are found [true,false]
